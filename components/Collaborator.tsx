@@ -19,7 +19,7 @@ const Collaborator = ({roomId, creatorId, collaborator, email, user}: Collaborat
         setLoading(false);
     }
 
-    const removeCollaboratorHandler = async(email:string) => {
+    const removeCollaboratorHandler = async (email:string) => {
         setLoading(true);
         await removeCollaborator({ roomId, email});
         setLoading(false);
